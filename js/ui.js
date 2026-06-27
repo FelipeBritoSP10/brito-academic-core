@@ -9,7 +9,8 @@ const ui = {
         const tbody = document.querySelector('#tabelaNotas tbody');
         tbody.innerHTML = '';
         for (let disc in materias) {
-            let notasHtml = materias[disc].map((n, i) => `<span class="nota-tag" onclick="removerNota('${disc}', ${i})">${n}</span>`).join('');
+            let notasHtml = materias[disc].map((n, i) => `<span class="nota-tag" title="Clique para remover a nota: ${n}"
+            onclick="removerNota('${disc}', ${i})">${n}</span>`).join('');
             tbody.innerHTML += `<tr><td><strong>${disc}</strong></td><td>${notasHtml}</td></tr>`;
         }
     }
