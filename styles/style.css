@@ -1,0 +1,124 @@
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f8fafc;
+    --accent: #22d3ee;
+    --danger: #ef4444;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: #1e293b;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #334155;
+}
+
+.logo {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.container {
+    flex: 1;
+    max-width: 700px;
+    margin: 40px auto;
+    background: var(--card);
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    border: 1px solid #334155;
+}
+
+.screen {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+h1 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0f172a;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+}
+
+.nota-tag {
+    background: #334155;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nota-tag:hover {
+    background: var(--danger);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 0.8rem;
+    border-top: 1px solid #334155;
+}

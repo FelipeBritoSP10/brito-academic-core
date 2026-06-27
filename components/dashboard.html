@@ -1,0 +1,22 @@
+<div id="screenDashboard" class="screen">
+    <h2 id="viewNome"></h2>
+    <p id="viewInfo" style="color:var(--accent); font-weight:bold;"></p>
+
+    <div style="background:#0f172a; padding:15px; border-radius:8px;">
+        <input type="text" id="disciplina" placeholder="Matéria">
+        <input type="number" id="nota" placeholder="Nota" step="0.1" min="0" max="10">
+        <button onclick="adicionarNota()">Adicionar Nota</button>
+    </div>
+
+    <table id="tabelaNotas">
+        <thead>
+            <tr>
+                <th>Disciplina</th>
+                <th>Notas</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <canvas id="meuGrafico" style="margin-top:20px;"></canvas>
+</div>
